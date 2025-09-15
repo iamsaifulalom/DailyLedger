@@ -1,6 +1,7 @@
 import { ScrollView, View, Text } from 'react-native'
 import React from 'react'
 import DataCard from '@/components/ui/DataCard'
+import MyPieChart from '@/components/ui/chE'
 
 export default function dashboard() {
     return (
@@ -26,12 +27,14 @@ export default function dashboard() {
                 />
                 <DataCard
                     title='Capital'
-                    value="10,000k"
+                    value="10000k"
                     percentage='10% ↓'
                     percentageColor='red'
                     comparisonValue="30000k"
                 />
             </View>
+            {/* pie chart */}
+            <MyPieChart/>
         </ScrollView>
     )
 }
