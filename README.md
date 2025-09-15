@@ -1,50 +1,63 @@
-# Welcome to your Expo app 👋
+# DailyLedger
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+**DailyLedger** is a simple React Native app built with **Expo**, **NativeWind**, and **ReactNativeReusables**. It helps institutes track financial activities such as daily collections, customer balances, and institute balances with a simple admin interface and visual charts.
 
-## Get started
+---
 
-1. Install dependencies
+## 🛠 Features
 
+- **Admin Status** – Single admin access to manage the institute’s finances.
+- **Basic Financial Tracking** – Track total money under people and daily collections.
+- **Automatic Updates** – Customer balance decreases and institute balance increases automatically when collections are made.
+- **Picture Upload** – Add photos for customers or receipts.
+- **Simple Line Chart** – Visualize daily or weekly collections in a simple line chart.
+
+---
+
+## 💻 Tech Stack
+
+- **React Native (Expo)** – For building cross-platform mobile apps.
+- **NativeWind** – For styling using Tailwind CSS.
+- **ReactNativeReusables** – For reusable components across the app.
+- **React Navigation** – For seamless navigation between screens.
+- **AsyncStorage / Local Database** – To persist financial data locally (or replace with backend in future).
+
+---
+
+## ⚡ Installation
+
+1. **Clone the repository**  
    ```bash
+   git clone https://github.com/yourusername/DailyLedger.git
+   cd DailyLedger
    npm install
+   npm run dev
    ```
 
-2. Start the app
+## 📝 Usage
 
-   ```bash
-   npx expo start
-   ```
+1. Open the app and log in as the admin.
+2. Add customers and their initial balances.
+3. Record daily collections.
+4. The app automatically updates customer balances and institute total.
+5. View the line chart to see collection trends over time.
 
-In the output, you'll find options to open the app in a
-
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
+## 📂 Folder Structure (Example)
 
 ```bash
-npm run reset-project
+DailyLedger/
+├─ assets/          # Images, icons
+├─ components/      # Reusable UI components
+├─ screens/         # App screens (Home, Customers, Collection, Chart)
+├─ navigation/      # Navigation setup
+├─ utils/           # Helper functions
+├─ App.js           # Main app entry
+└─ package.json
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+## 🎯 Future Improvements
 
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+- Multi-admin / multi-institute support.
+- Export to PDF or Excel reports.
+- Push notifications for daily collections.
+- Backend integration for cloud storage and synchronization.
