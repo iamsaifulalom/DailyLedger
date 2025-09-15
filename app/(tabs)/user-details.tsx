@@ -4,7 +4,7 @@ import React from 'react'
 export default function userDetails() {
   return (
     <View>
-      <Text>userDetails</Text>
+      <Text className='text-9xl text-white'>userDetails</Text>
     </View>
   )
 }
