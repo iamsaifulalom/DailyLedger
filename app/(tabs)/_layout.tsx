@@ -1,4 +1,3 @@
-import { Text } from 'react-native';
 import React from 'react';
 import { Tabs } from 'expo-router';
 import { Feather } from '@expo/vector-icons'
@@ -11,7 +10,7 @@ export default function Layout() {
                 tabBarActiveTintColor: "#000000"
             }}>
             <Tabs.Screen name='dashboard' options={{
-                tabBarLabel: "Dashboard",
+                tabBarLabel: "Home",
                 headerShown: false,
                 tabBarIcon: ({ focused }) => (
                     <Feather name='home' style={{ color: focused ? "#000000" : "#0000006b" }} size={20} />
