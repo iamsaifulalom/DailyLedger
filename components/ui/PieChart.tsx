@@ -10,7 +10,7 @@ export default function MyPieChart() {
   ];
 
   return (
-    <View className="w-full bg-white mt-2 rounded-lg">
+    <View className="w-full bg-white rounded-lg">
       <PieChart
         data={data}
         width={Dimensions.get("window").width - 20}
@@ -21,7 +21,6 @@ export default function MyPieChart() {
         accessor="population"
         backgroundColor="transparent"
         paddingLeft="15"
-        absolute
       />
     </View>
   );
