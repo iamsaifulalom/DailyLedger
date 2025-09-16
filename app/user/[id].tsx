@@ -1,12 +1,15 @@
-import { useLocalSearchParams } from 'expo-router';
-import { View, Text } from 'react-native';
+import { View, Text, TouchableOpacity } from 'react-native';
+import { Feather } from '@expo/vector-icons';
+import UserDetailsCard from '@/components/ui/UserDetailsCard';
+import Header from '@/components/ui/Header';
+
 
 export default function Details() {
 
-    const { id } = useLocalSearchParams()
     return (
         <View className='bg-white min-h-screen p-4'>
-            <Text>Details {id}</Text>
+            <Header title='Details' />
+            <UserDetailsCard />
         </View>
     )
 }
