@@ -5,7 +5,12 @@ import { Feather } from '@expo/vector-icons';
 export default function UserDetailsCard() {
   return (
     <View className='flex-row mt-8'>
-      <Feather name='user' size={100} color="gray" className='border border-gray-300 rounded-lg' />
+      <Feather
+        name='user'
+        size={100}
+        color="gray"
+        className='border border-gray-300 rounded-full aspect-square text-center'
+      />
       <View className='px-4'>
         <Text className='text-xl font-bold'>Saiful Alom</Text>
         <Text className='text-sm text-gray-500'>Phone: 01935679071</Text>

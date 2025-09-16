@@ -5,9 +5,9 @@ import UserCard from '@/components/ui/UserCard';
 
 export default function Users() {
   return (
-    <View className='bg-white min-h-screen p-4'>
+    <View className='bg-white min-h-screen p-4 pb-24'>
       <Text className='text-xl font-bold'>Customers</Text>
-      <ScrollView showsVerticalScrollIndicator={false}>
+      <ScrollView showsVerticalScrollIndicator={false} className='pb-16'>
         {users.map((user) => (<UserCard key={user.id} {...user} />))}
       </ScrollView>
     </View>

@@ -1,13 +1,12 @@
-import { ScrollView, View, Text } from 'react-native'
+import { View, Text } from 'react-native'
 import React from 'react'
 import DataCard from '@/components/ui/DataCard'
-import MyPieChart from '@/components/ui/PieChart'
 import MyBezierLineChart from '@/components/ui/MyBezierLineChart'
 
 export default function dashboard() {
     return (
-        <ScrollView className='p-4 bg-white' showsVerticalScrollIndicator={false}>
-            <Text className='text-3xl text-center'>
+        <View className='p-4 bg-white'>
+            <Text className='text-xl'>
                 <Text className='font-bold'>Wellcome</Text> to Dashboard
             </Text>
             {/* Data at glance */}
@@ -33,11 +32,9 @@ export default function dashboard() {
                     percentageColor='red'
                     comparisonValue="30000k"
                 />
-                {/* pie chart */}
-                <MyPieChart />
+                {/* line chart */}
                 <MyBezierLineChart/>
             </View>
-
-        </ScrollView>
+        </View>
     )
 }
