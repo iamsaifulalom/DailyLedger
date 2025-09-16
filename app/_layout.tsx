@@ -5,10 +5,10 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 export default function RootLayout() {
   return (
     <SafeAreaView edges={["top"]} style={{ flex: 1 }}>
-      <Stack>
+      <Stack >
         <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
         <Stack.Screen name="index" options={{ headerShown: false }} />
-        <Stack.Screen name="user/[id]" options={{ headerShown: false }} />
+        <Stack.Screen name="user/[id]" options={{ headerShown: false , animation: "slide_from_right"}} />
       </Stack>
     </SafeAreaView>
   );

@@ -6,6 +6,7 @@ export default function Layout() {
   return (
     <Tabs
       screenOptions={{
+        animation: "shift",
         tabBarInactiveTintColor: "#0000006b",
         tabBarActiveTintColor: "#000000"
       }}
