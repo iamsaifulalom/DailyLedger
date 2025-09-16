@@ -5,7 +5,7 @@ export default function Details() {
 
     const { id } = useLocalSearchParams()
     return (
-        <View className='bg-white min-h-screen'>
+        <View className='bg-white min-h-screen p-4'>
             <Text>Details {id}</Text>
         </View>
     )

@@ -33,7 +33,7 @@ const data = {
 
 const MyBezierLineChart = () => {
     return (
-        <View className='bg-white rounded-lg py-4'>
+        <View className='bg-white  border border-gray-100 rounded-lg py-4'>
             <Text className='text-center font-bold'>Capital in deffrent month</Text>
             <LineChart
                 data={data}

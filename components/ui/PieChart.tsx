@@ -10,7 +10,7 @@ export default function MyPieChart() {
   ];
 
   return (
-    <View className="w-full bg-white rounded-lg">
+    <View className="w-full border border-gray-100 bg-white rounded-lg">
       <PieChart
         data={data}
         width={Dimensions.get("window").width - 20}

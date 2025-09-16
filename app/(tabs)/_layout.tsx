@@ -10,33 +10,47 @@ export default function Layout() {
         tabBarActiveTintColor: "#000000"
       }}
     >
-      <Tabs.Screen 
-        name="dashboard" 
+      <Tabs.Screen
+        name="dashboard"
         options={{
           tabBarLabel: "Home",
           headerShown: false,
           tabBarIcon: ({ focused }) => (
-            <Feather 
-              name="home" 
-              style={{ color: focused ? "#000000" : "#0000006b" }} 
-              size={20} 
+            <Feather
+              name="home"
+              style={{ color: focused ? "#000000" : "#0000006b" }}
+              size={20}
             />
           )
-        }} 
+        }}
       />
-      <Tabs.Screen 
-        name="users" 
+      <Tabs.Screen
+        name="users"
         options={{
           tabBarLabel: "User",
           headerShown: false,
           tabBarIcon: ({ focused }) => (
-            <Feather 
-              name="user" 
-              style={{ color: focused ? "#000000" : "#0000006b" }} 
-              size={20} 
+            <Feather
+              name="user"
+              style={{ color: focused ? "#000000" : "#0000006b" }}
+              size={20}
             />
           )
-        }} 
+        }}
+      />
+      <Tabs.Screen
+        name="add-user"
+        options={{
+          tabBarLabel: "Add User",
+          headerShown: false,
+          tabBarIcon: ({ focused }) => (
+            <Feather
+              name="user-plus"
+              style={{ color: focused ? "#000000" : "#0000006b" }}
+              size={20}
+            />
+          )
+        }}
       />
     </Tabs>
   );
