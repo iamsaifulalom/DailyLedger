@@ -14,7 +14,12 @@ export default function UserCard({ id, name, phone }: UserCardProps) {
 
     return (
         <TouchableOpacity onPress={() => { push(`/user/${id}`) }} className='flex-row mt-2 gap-4 border items-center border-gray-100 rounded-lg p-4'>
-            <Feather name='user' size={25} color="gray"  className='border rounded-full border-gray'/>
+            <Feather
+                name='user'
+                size={25}
+                color="gray"
+                className='border-2 overflow-hidden aspect-square text-center rounded-full border-gray-500'
+            />
             <View>
                 <Text className='text-lg font-bold'>{name}</Text>
                 <Text className='text-sm text-gray-500'>{phone}</Text>
