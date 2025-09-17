@@ -38,6 +38,7 @@ export default function AddUser() {
       />
 
       <Input
+        keyboardType='numeric'
         label='Phone Number'
         placeholder='01xxxxxxxxx'
       />
@@ -48,6 +49,7 @@ export default function AddUser() {
       />
 
       <Input
+        keyboardType='numeric'
         label='Date of birth'
         placeholder='18-03-25'
       />
@@ -58,10 +60,12 @@ export default function AddUser() {
       />
 
       <Input
+        keyboardType='numeric'
         label='Loan'
         placeholder='500000'
       />
       <Input
+        keyboardType='numeric'
         label='Paid'
         placeholder='500000'
       />

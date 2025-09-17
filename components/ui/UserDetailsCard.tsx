@@ -1,5 +1,4 @@
 import { View, Text } from 'react-native';
-import React from 'react';
 import { Feather } from '@expo/vector-icons';
 
 export default function UserDetailsCard() {
@@ -14,9 +13,9 @@ export default function UserDetailsCard() {
       <View className='px-4'>
         <Text className='text-xl font-bold'>Saiful Alom</Text>
         <Text className='text-sm text-gray-500'>Phone: 01935679071</Text>
-        <Text className='text-sm text-gray-500'>Father: Abdur Rahman</Text>
+        <Text className='text-sm text-gray-500'>Father: Abdus Salam</Text>
         <Text className='text-sm text-gray-500'>ID card: 4223016991</Text>
-        <Text className='text-sm text-gray-500'>Date Of Birth: 12/08/2014</Text>
+        <Text className='text-sm text-gray-500'>Date Of Birth: 12-08-2004</Text>
         <View className='flex-row items-center justify-between'>
           <Text className='text-sm text-gray-500'>Total: 180k</Text>
           <Text className='text-sm text-gray-500'>Paid: 180k</Text>
