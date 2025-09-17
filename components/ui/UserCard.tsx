@@ -18,7 +18,7 @@ export default function UserCard({ id, name, phone }: UserCardProps) {
                 name='user'
                 size={25}
                 color="gray"
-                className='border-2 overflow-hidden aspect-square text-center rounded-full border-gray-500'
+                className='border overflow-hidden aspect-square text-center rounded-full border-gray-500'
             />
             <View>
                 <Text className='text-lg font-bold'>{name}</Text>

@@ -9,7 +9,7 @@ export default function UserDetailsCard() {
         name='user'
         size={100}
         color="gray"
-        className='border-8 border-gray-500 overflow-hidden rounded-full aspect-square text-center'
+        className='border border-gray-500 overflow-hidden rounded-full aspect-square text-center'
       />
       <View className='px-4'>
         <Text className='text-xl font-bold'>Saiful Alom</Text>
