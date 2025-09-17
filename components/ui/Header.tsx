@@ -11,7 +11,7 @@ export default function Header({ title }: { title: string }) {
             <TouchableOpacity onPress={() => back()} className='size-8 items-center flex justify-start rounded-full border-gray-200' accessibilityLabel="Go back">
                 <Feather name='arrow-left' size={24} />
             </TouchableOpacity>
-            <Text>{title}</Text>
+            <Text className='text-xl font-bold'>{title}</Text>
         </View>
     )
 }

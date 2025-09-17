@@ -4,16 +4,20 @@ import React from 'react'
 type ButtonProps = {
   label?: string,
   isLoading?: boolean,
-  className?: string
+  className?: string,
+  onPress?: () => void
 }
 
-
-export default function Button({ label = "Button", isLoading = false, className }: ButtonProps) {
+export default function Button({ label = "Button", isLoading = false, className, onPress }: ButtonProps) {
   return (
-    <Pressable 
-    className={`bg-black p-2.5 flex-row justify-center items-center gap-4 rounded-lg ${className}`}>
-      {isLoading && <ActivityIndicator className='text-white' />}
-      <Text className='text-white text-center text-lg'>{label}</Text>
+    <Pressable
+      style={{ backgroundColor: isLoading ? "#00000099" : "#000000" }}
+      onPress={onPress}
+      className={`p-2.5 flex-row justify-center items-center gap-4 rounded-lg ${className}`}>
+      {isLoading ?
+        <ActivityIndicator size={25} className='text-white text-lg' /> :
+        <Text className='text-white text-center text-lg'>{label}</Text>
+      }
     </Pressable>
   )
 }

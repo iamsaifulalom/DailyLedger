@@ -3,9 +3,10 @@ import { KeyboardAwareScrollView } from 'react-native-keyboard-aware-scroll-view
 import { Feather } from '@expo/vector-icons'
 import Input from '@/components/ui/Input' // see forwarded-ref Input below
 import Button from '@/components/ui/Button'
+import { useState } from 'react'
 
 export default function AddUser() {
-
+  const [isLoading, setIsLoading] = useState(false);
 
   return (
     <KeyboardAwareScrollView
@@ -15,7 +16,7 @@ export default function AddUser() {
       extraScrollHeight={Platform.OS === 'android' ? 140 : 20}
       keyboardShouldPersistTaps="handled"
     >
-      <Text className='text-xl font-bold'>Add new user</Text>
+      <Text className='text-xl font-bold'>Add customer</Text>
 
       <Feather
         name='user'
@@ -65,7 +66,8 @@ export default function AddUser() {
         placeholder='500000'
       />
       <Button
-        isLoading={true}
+        onPress={() => setIsLoading(pre => !pre)}
+        isLoading={isLoading}
         label='Save'
         className='mt-5'
       />
